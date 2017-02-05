@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ButtonSelf" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlW-XN-qYu" customClass="UIButtonTouched" customModule="ButtonSelf" customModuleProvider="target">
+                                <rect key="frame" x="123" y="156" width="210" height="210"/>
+                                <accessibility key="accessibilityConfiguration" identifier="rash">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelName" value="Rash"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThQ-pk-Eeg" customClass="UIButtonTouched" customModule="ButtonSelf" customModuleProvider="target">
+                                <rect key="frame" x="376" y="45" width="210" height="210"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelName" value="Pain"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJN-5s-5x3">
+                                <rect key="frame" x="358" y="499" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="fR7-jk-XKm" kind="show" identifier="nextScreenSegue" id="ose-gj-lnd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SlW-XN-qYu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="rrO-1A-4Rl"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="btn1" destination="SlW-XN-qYu" id="inx-nz-2Q9"/>
+                        <outlet property="btn2" destination="ThQ-pk-Eeg" id="g23-XN-nl0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="301"/>
+        </scene>
+        <!--Button State View Controller-->
+        <scene sceneID="4JI-qu-qca">
+            <objects>
+                <viewController id="fR7-jk-XKm" customClass="ButtonStateViewController" customModule="ButtonSelf" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E5c-pD-hxo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xre-w7-ypE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gkb-i1-RwN">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSp-Hf-mUA">
+                                <rect key="frame" x="20" y="40" width="728" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teK-Hi-bKT">
+                                <rect key="frame" x="20" y="68.5" width="728" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KSp-Hf-mUA" firstAttribute="top" secondItem="E5c-pD-hxo" secondAttribute="bottom" constant="20" id="H2b-BL-r6w"/>
+                            <constraint firstItem="KSp-Hf-mUA" firstAttribute="leading" secondItem="gkb-i1-RwN" secondAttribute="leading" constant="20" id="NWB-1S-6AC"/>
+                            <constraint firstItem="teK-Hi-bKT" firstAttribute="top" secondItem="KSp-Hf-mUA" secondAttribute="bottom" constant="8" id="gwe-cp-ZrO"/>
+                            <constraint firstItem="teK-Hi-bKT" firstAttribute="trailing" secondItem="KSp-Hf-mUA" secondAttribute="trailing" id="jY5-nq-44n"/>
+                            <constraint firstAttribute="trailing" secondItem="KSp-Hf-mUA" secondAttribute="trailing" constant="20" id="k02-dw-Zac"/>
+                            <constraint firstItem="teK-Hi-bKT" firstAttribute="leading" secondItem="KSp-Hf-mUA" secondAttribute="leading" id="y6p-Q9-6OD"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="painLabel" destination="teK-Hi-bKT" id="JSI-AR-uvn"/>
+                        <outlet property="rushLabel" destination="KSp-Hf-mUA" id="6BP-Qz-NPv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30Z-Qa-lpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1091" y="301"/>
+        </scene>
+    </scenes>
+</document>
